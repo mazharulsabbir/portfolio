@@ -17,4 +17,13 @@ export class ProfileComponent implements OnInit {
   countClick() {
     this.clickCounter += 1;
   }
+
+  setClass() {
+    let myClass = {
+      active: this.clickCounter > 4,
+      nonActive: this.clickCounter <= 4
+    }
+
+    return myClass;
+  }
 }
