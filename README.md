@@ -26,6 +26,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 Run `ng g c $routeName` to generate routing.
 
+## Add Bootstrap
+
+Run `npm install bootstrap jquery popper.js --save` to install bootstrap into project.
+
+Write this lines of code into `angular.json`
+`            "styles": [`
+`              "node_modules/bootstrap/dist/css/bootstrap.min.css",`
+`              "src/styles.scss"`
+`            ],`
+`            "scripts": [`
+`              "node_modules/jquery/dist/jquery.min.js",`
+`              "node_modules/bootstrap/dist/js/bootstrap.min.js",`
+`              "node_modules/popper.js/dist/umd/popper.min.js"`
+`            ]`
+
 
 ## Further help
 
