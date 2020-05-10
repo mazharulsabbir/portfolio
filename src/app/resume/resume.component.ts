@@ -11,7 +11,7 @@ export class ResumeComponent implements OnInit {
   constructor(private _http: HttpService) { }
 
   ngOnInit(): void {
-    this._http.myMethod()
+    this._http.myMethod()    
   }
 
 }
