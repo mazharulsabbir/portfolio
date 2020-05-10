@@ -7,6 +7,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FormsModule } from '@angular/forms'
 
+import { HttpClientModule } from '@angular/common/http';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,9 @@ import { FormsModule } from '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule, 
+    AngularSvgIconModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

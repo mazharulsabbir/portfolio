@@ -1,3 +1,4 @@
+<!-- selector -->
 <div class="intro">
     <!-- short bio -->
     <h5 class="lead">Hello, I'm</h5>
@@ -6,42 +7,92 @@
 
     <!-- social activities -->
     <div class="d-flex justify-content-start">
-        <a href="#"><span>F</span></a>
-        <a href="#"><span>T</span></a>
+        <a class="btn btn-light  btn-sm" href="#">
+            <svg-icon src="../assets/social/twitter-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
+        </a>
+
+        <a class="btn btn-light  btn-sm" href="#">
+            <svg-icon src="../assets/social/facebook-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
+        </a>
+
+        <a class="btn btn-light  btn-sm" href="#">
+            <svg-icon src="../assets/social/github-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
+        </a>
+
+        <a class="btn btn-light  btn-sm" href="#">
+            <svg-icon src="../assets/social/linkedin-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
+        </a>
     </div>
 
-    <!-- divider -->
-    <hr class="my-4">
-
-    <!-- desc about my profession/experience -->
-    <div class="profile-desc">
-        <p>
-            Hi! I am <b>{{title}}</b>. I live in Dhaka, Bangladesh. <br>
-
-            Currently I'm working with a startup company named as <b>School Of Thought</b> since 2019.<br>
-
-            I have experience to develop <b>Android application</b> since 2018.
-        </p>
+    <div class="hireme-btn">
+        <a class="btn btn-primary rounded-pill btn-sm" href="#" role="button">HIRE ME</a>
     </div>
-    <a class="btn btn-primary rounded-pill btn-sm" href="#" role="button">HIRE ME</a>
 </div>
 
+<!-- tabs for projects -->
 <div class="projects">
     <!-- divider -->
     <hr class="my-4">
-    
+
     <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link" href="#">RECENT</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">ALL</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">ANDROID</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">WEB</a>
-        </li>
+
     </ul>
+</div>
+
+<div class="card text-start">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">RECENT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ALL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ANDROID</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">WEB</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="project-holder">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <img src="../assets/project/rannaghor.png" class="card-img-top" alt="rannaghor">
+                        <div class="card-body">
+                            <h5 class="card-title">Rannaghor</h5>
+                            <p class="card-text">Make your food delicious</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <img src="../assets/project/rannaghor.png" class="card-img-top" alt="rannaghor">
+                        <div class="card-body">
+                            <h5 class="card-title">Rannaghor</h5>
+                            <p class="card-text">Make your food delicious</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <img src="../assets/project/rannaghor.png" class="card-img-top" alt="rannaghor">
+                        <div class="card-body">
+                            <h5 class="card-title">Rannaghor</h5>
+                            <p class="card-text">Make your food delicious</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
