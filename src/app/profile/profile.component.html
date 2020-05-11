@@ -32,6 +32,7 @@
 <!-- divider -->
 <hr class="my-4">
 
+<!-- projects -->
 <div class="text-start">
     <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs">
@@ -50,25 +51,43 @@
         </ul>
     </div>
 
-    <div class="project-holder">
-        <div class="row" >
-            <div class="col-sm-4" *ngFor="let project of projects">
-                <div class=" shadow-sm p-3 mb-5 bg-white rounded">
-                    <a routerLink="">
+    <!-- project item holder -->
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let project of projects">
+            <div class=" shadow-sm p-3 mb-5 bg-white rounded">
+                <a routerLink="">
+                    <div class="card-body">
+                        <img src="../assets/project/rannaghor.png" class="card-img-top" alt="rannaghor">
+
+                        <!-- divider -->
+                        <hr class="item-divider">
+
                         <div class="card-body">
-                            <img src="../assets/project/rannaghor.png" class="card-img-top" alt="rannaghor">
-
-                            <!-- divider -->
-                            <hr class="item-divider">
-
-                            <div class="card-body">
-                                <h5 class="card-title">{{project.name}}</h5>
-                                <p class="card-text">{{project.desc}}</p>
-                            </div>
+                            <h5 class="card-title">{{project.name}}</h5>
+                            <p class="card-text">{{project.desc}}</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
+    </div>
+
+    <!-- load more projects -->
+    <button class="btn btn-outline-primary rounded-pill my-2 btn-sm" type="submit">LOAD MORE WORK</button>
+
+</div>
+
+<br><br><br>
+
+<!-- about me -->
+<div class="row">
+    <div class="col-sm-4">
+        <img src="../assets/person/avatar2.jpg" class="card-img-top" alt="rannaghor">
+    </div>
+    <div class="col">
+        <h5>{{about_me}}</h5>
+        <h1>{{who_am_i}}</h1>
+        <p>{{about_body}}</p>
+        <button class="btn btn-outline-primary rounded-pill my-2 btn-sm" type="submit">HIRE ME</button>
     </div>
 </div>
