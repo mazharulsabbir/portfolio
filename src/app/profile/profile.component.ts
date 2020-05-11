@@ -10,6 +10,20 @@ export class ProfileComponent implements OnInit {
   clickCounter: number = 0;
   name: string
   title = 'Mazharul Sabbir';
+  
+  projects = [
+    {
+      name: "Rannaghor",
+      desc: "Make your food delicious",
+      img: "assets/project/rannaghor.png"
+    },
+    {
+      name: "Rannaghor",
+      desc: "Make your food delicious",
+      img: "assets/project/rannaghor.png"
+    },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
