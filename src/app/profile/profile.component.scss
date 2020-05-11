@@ -17,13 +17,16 @@ span{
     }
 }
 
+.card-body{
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .card-header{
     margin-bottom: 20px;
 }
 
-.project-holder{
-    padding: 20px;
-}
 
 .hireme-btn{
     margin-top: 20px;
