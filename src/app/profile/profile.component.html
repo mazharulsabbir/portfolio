@@ -1,31 +1,37 @@
-<!-- selector -->
-<div class="intro">
-    <!-- short bio -->
-    <h5 class="lead">Hello, I'm</h5>
-    <h3 class="display-5">{{title}}</h3>
-    <p>Android | Web Developer & UI | UX Designer</p>
+<div class="d-flex justify-content-between about-me">
+    <!-- selector -->
+    <div class="intro">
+        <!-- short bio -->
+        <h5 class="lead">Hello, I'm</h5>
+        <h3 class="display-5">{{title}}</h3>
+        <p>Android | Web Developer & UI | UX Designer</p>
 
-    <!-- social activities -->
-    <div class="d-flex justify-content-start">
-        <a class="btn btn-light  btn-sm" href="#">
-            <svg-icon src="../assets/social/twitter-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
-        </a>
+        <!-- social activities -->
+        <div class="d-flex justify-content-start">
+            <a class="btn btn-light  btn-sm" href="#">
+                <svg-icon src="../assets/social/twitter-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
+            </a>
 
-        <a class="btn btn-light  btn-sm" href="#">
-            <svg-icon src="../assets/social/facebook-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
-        </a>
+            <a class="btn btn-light  btn-sm" href="#">
+                <svg-icon src="../assets/social/facebook-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
+            </a>
 
-        <a class="btn btn-light  btn-sm" href="#">
-            <svg-icon src="../assets/social/github-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
-        </a>
+            <a class="btn btn-light  btn-sm" href="#">
+                <svg-icon src="../assets/social/github-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
+            </a>
 
-        <a class="btn btn-light  btn-sm" href="#">
-            <svg-icon src="../assets/social/linkedin-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
-        </a>
+            <a class="btn btn-light  btn-sm" href="#">
+                <svg-icon src="../assets/social/linkedin-outline.svg" [svgStyle]="{ 'width.px':20 }"></svg-icon>
+            </a>
+        </div>
+
+        <div class="hireme-btn">
+            <a class="btn btn-primary rounded-pill btn-sm" routerLink="/hire" href="#" role="button">HIRE ME</a>
+        </div>
     </div>
 
-    <div class="hireme-btn">
-        <a class="btn btn-primary rounded-pill btn-sm" routerLink="/hire" href="#" role="button">HIRE ME</a>
+    <div class="col-sm-4">
+        <img src="../assets/person/avatar1.jpg" class="rounded-lg card-img-top" alt="rannaghor">
     </div>
 </div>
 
