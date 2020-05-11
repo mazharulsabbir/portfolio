@@ -53,11 +53,11 @@
 
     <!-- project item holder -->
     <div class="row">
-        <div class="col-sm-4" *ngFor="let project of projects">
+        <div class="col-sm-4" *ngFor="let project of projects" style="min-width: 18rem;">
             <div class=" shadow-sm p-3 mb-5 bg-white rounded">
                 <a routerLink="">
                     <div class="card-body">
-                        <img src="../assets/project/rannaghor.png" class="card-img-top" alt="rannaghor">
+                        <img src="{{project.img}}" class="card-img-top" alt="{{project.name}}" height="150px">
 
                         <!-- divider -->
                         <hr class="item-divider">
@@ -77,14 +77,13 @@
 
 </div>
 
-<br><br><br>
-
 <!-- about me -->
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4" style="margin-top: 2em;">
         <img src="../assets/person/avatar2.jpg" class="card-img-top" alt="rannaghor">
     </div>
-    <div class="col">
+
+    <div class="col" style="margin-top: 2em; margin-bottom: 2em;">
         <h5>{{about_me}}</h5>
         <h1>{{who_am_i}}</h1>
         <p>{{about_body}}</p>

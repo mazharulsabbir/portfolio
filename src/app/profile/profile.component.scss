@@ -6,17 +6,6 @@ span{
     user-select: none;
 }
 
-.play-container{
-    padding: 3em;
-    border: 1px solid lightgray;
-    margin-bottom: 1em;
-
-    input{
-        padding: 1em;
-        margin-bottom: 2em;
-    }
-}
-
 .card-body{
     cursor: pointer;
     padding-top: 0;
@@ -45,13 +34,4 @@ a{
 
 h3,h5{
     margin: 0;
-}
-
-.active{
-    background-color: yellow;
-    border: 4px solid black;
-}
-
-.nonActive{
-    background-color: lightgray;
 }
